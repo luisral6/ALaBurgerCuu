@@ -10,12 +10,14 @@
     <meta name="author" content="">
 
     <title>A la burger</title>
+     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,10 +31,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
+    </script>
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -45,6 +53,7 @@
                     <i class="fa fa-cutlery"></i>  <span class="light">Inicio</span> 
                 </a>
             </div>
+           
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -63,11 +72,20 @@
                         <a class="page-scroll" href="#eventos">eventos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Sobre nosotros</a>
+                      <li>
+                        <a class="page-scroll" href="#about">Sobre Nosotros</a>
                     </li>
+                    <li>
+                    <div>
+                       <i class="fa fa-phone"></i> <a class="light" href="#"> (614) 123-45-67</a> 
+                       </div>
+                    </li>
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
         </div>
         <!-- /.container -->
     </nav>
@@ -78,8 +96,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
+                    
                         <h1 class="brand-heading">A la burger</h1>
+                       
                         <h1>Las mejores de #CUU</h1>
+            
+
                         <a href="#menu" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -106,14 +128,26 @@
         <div class="ubicacion-section">
         <div class= "container">
         </br>
-        <div class="col-md-4 col-xs-12"><h1>Ubicacion</h1></div>
-  
+        <div class="col-md-4 col-xs-12">
+        <h1>Ubicación</h1>
+        <p style="font-family:arial"> ¡Visítanos! Estamos en Av. Francisco Villa, esquina con Republica de Cuba.  </p>
+        </div>
+            
         <div class = "col-md-8 col-xs-12">
 
     <div class = "google-maps">
         
         <iframe width="500" height="450" frameborder="0" style="border:0"
 src="https://www.google.com/maps/embed/v1/place?q=av.%20Francisco%20Villa%2C%20esquina%20con%20Republica%20de%20Cuba%2C%20Chihuahua%2C%20Chihuahua&key=AIzaSyDzApWSFhIfQTq4JmxrPjcTQExUYIDlFfE" allowfullscreen></iframe>
+<script type="text/javascript">
+    $(function() {
+    $('.google-maps').click(function(e) {
+        $(this).find('iframe').css('pointer-events', 'all');
+    }).mouseleave(function(e) {
+        $(this).find('iframe').css('pointer-events', 'none');
+    });
+})
+</script>
     
     </div>
     
