@@ -263,8 +263,23 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
+.eventos-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(../img/alb.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.about-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(../img/albb.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .ubicacion-section {
