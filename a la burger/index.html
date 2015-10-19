@@ -116,26 +116,34 @@
     </header>
 
     <!-- menu Section -->
-    <section id="menu" class="container content-section text-center">
+    <section id="menu" class="container content-section text-center" style="padding-top:50px;">
         <div class="row">
-            <div class="col-lg-9 col-lg-offset-1">
-                <center>
-                    <div class="slider responsive">    
-                        <div>
+            <div class="col-lg-11  col-md-10 .col-md-offset-1">
+                
+                <br>
+                <h1>Menu</h1><br>
+
+                
+                    <div class="slider responsive" >    
+                        <div class="col-lg-6 col-md-12">
                            <h3>Sencilla</h3>
+                           <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="190" width="283" />
                         </div>
-                        <div>
+                        <div class="col-lg-6 col-md-12">
                             <h3>Doble</h3>
+                            <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="190" width="283" />
                         </div>
-                        <div>
+                        <div class="col-lg-6 col-md-12">
                             <h3>Hawaiana</h3>
+                            <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="190" width="283" />
                         </div>
-                        <div>
+                        <div class="col-lg-6 col-md-12">
                             <h3>Especial</h3>
+                            <img style="margin:auto;" src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="190" width="283" />
                         </div>
                     </div>
-                </center>
-            </div>
+                
+                </div>
         </div>
     </section>
 
@@ -248,14 +256,42 @@ src="https://www.google.com/maps/embed/v1/place?q=av.%20Francisco%20Villa%2C%20e
         $(document).ready(function(){
             $('.slider').slick({
                 dots: true,
-
                 infinite: true,
                 speed: 300,
                 adaptiveHeight: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2750,
+           responsive: [{
+            breakpoint: 1025,
+            settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-            });
-            });
+            }
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,                
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,  
+            }
+        }]
+    });
+
+
+});
     </script>
 
 </body>
