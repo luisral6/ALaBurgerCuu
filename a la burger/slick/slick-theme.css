@@ -119,8 +119,8 @@
 
 .slick-dots
 {
-    color: white;
-    
+
+
     position: absolute;
     bottom: -45px;
 
@@ -148,6 +148,7 @@
 }
 .slick-dots li button
 {
+
     font-size: 0;
     line-height: 0;
 
@@ -161,8 +162,8 @@
 
     
     border: 0;
-    outline: none;
-    background: transparent;
+    outline: white;
+    background: white;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus

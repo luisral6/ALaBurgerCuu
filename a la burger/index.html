@@ -116,36 +116,41 @@
     </header>
 
     <!-- menu Section -->
-    <section id="menu" class="container content-section text-center" style="padding-top:50px;">
+    <section id="menu" class="container content-section text-center" style="padding-top:50px;font-family: sans-serif;" >
         <div class="container">
-        <div class="row">
-            <div class="col-lg-11  col-md-10 .col-md-offset-1">
-                
-                <br>
-                <h1>Menu</h1><br>
-
-                
-                    <div class="slider responsive" >    
-                        <div class="container">
-                           <h3>Sencilla</h3>
-                           <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
-                        </div>
-                        <div class="container">
-                            <h3>Doble</h3>
-                            <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
-                        </div>
-                        <div class="container">
-                            <h3>Hawaiana</h3>
-                            <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
-                        </div>
-                        <div class="container">
-                            <h3>Especial</h3>
-                            <img style="margin:auto;" src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
-                        </div>
+            <br><h1>Menu</h1><br>
+                <div class="slider responsive" >    
+                    <div class="container row" style="width=50%;">
+                       <h3>Sencilla</h3>
+                       <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
                     </div>
-                
+                    <div class="container row"style="width=50%;">
+                        <h3>Doble</h3>
+                        <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
+                    </div>
+                    <div class="container row" style="width=50%;">
+                        <h3>Hawaiana</h3>
+                        <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
+                    </div>
+                    <div class="container row" style="width=50%;">
+                        <h3>Especial</h3>
+                        <img style="margin:auto;" src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
+                    </div>
                 </div>
-            </div>
+                <div class="col-lg-6 " >
+                        <h3>Papas</h3>
+                        <img style="margin:auto;"src="http://cdn5.bobsfa.com.br/assets/cardapio/produtos/picanha-barbecue-100g.g.png"height="170" width="273" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
+                    </div>
+                <div class="col-lg-6 " >
+                        <h3>Chescos</h3>
+                        <img style="margin:auto;"src="http://www.burgerking.com.mx/sites/burgerking.com.mx/files/sites/burgerking.com.mx/files/REFRESCO-300x270.png"height="170" width="273" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ante varius, imperdiet ipsum aliquam, posuere quam. Aenean mattis ex consequat dolor tristique, quis tincidunt ligula lacinia.</p>
+                    </div>
         </div>
     </section>
 
@@ -257,13 +262,14 @@ src="https://www.google.com/maps/embed/v1/place?q=av.%20Francisco%20Villa%2C%20e
     <script>
         $(document).ready(function(){
             $('.slider').slick({
-                dots: true,
+                //dots: true,
+                pauseOnDotsHover:true,
                 infinite: true,
                 speed: 300,
                 adaptiveHeight: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2750,
            responsive: [{
             breakpoint: 1025,
